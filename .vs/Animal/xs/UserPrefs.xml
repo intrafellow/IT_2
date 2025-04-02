@@ -1,5 +1,6 @@
 ﻿<Properties StartupConfiguration="{A8B6FAC6-4ECA-5D4B-1CF4-8FDB02CD4E12}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Animal PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -10,7 +11,7 @@
       <File FileName="App.axaml" Line="4" Column="33" />
       <File FileName="app.manifest" Line="6" Column="45" />
       <File FileName="App.axaml.cs" Line="6" Column="7" />
-      <File FileName="Program.cs" Line="19" Column="29" />
+      <File FileName="Program.cs" Line="22" Column="1" />
       <File FileName="README.md" Line="1" Column="1" />
       <File FileName="ViewLocator.cs" Line="6" Column="11" />
       <File FileName="ViewModels/MainWindowViewModel.cs" Line="6" Column="7" />
@@ -25,8 +26,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Laba.2-Animal" expanded="True" selected="True">
-            <Node name="Laba.2-Animal" expanded="True">
+          <Node name="Animal" expanded="True">
+            <Node name="Animal" expanded="True">
               <Node name="Assets" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="ViewModels" expanded="True" />
@@ -41,6 +42,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Laba.2-Animal PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

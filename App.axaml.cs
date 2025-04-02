@@ -3,10 +3,10 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
-using Laba._2_Animal.Views;
-using Laba._2_Animal.ViewModels;
+using Animal.Views;
+using Animal.ViewModels;
 
-namespace Laba._2_Animal;
+namespace Animal;
 
 public partial class App : Application
 {

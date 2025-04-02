@@ -1,4 +1,4 @@
-namespace Laba._2_Animal.Models
+namespace Animal.Models
 
 {
     public interface ITreeClimber

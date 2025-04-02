@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Laba._2_Animal;
+namespace Animal;
 
 sealed class Program
 {

@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using Laba._2_Animal.ViewModels;
+using Animal.ViewModels;
 
-namespace Laba._2_Animal;
+namespace Animal;
 
 public class ViewLocator : IDataTemplate
 {

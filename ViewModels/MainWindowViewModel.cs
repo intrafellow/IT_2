@@ -3,9 +3,9 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Laba._2_Animal.Models;
+using Animal.Models;
 
-namespace Laba._2_Animal.ViewModels;
+namespace Animal.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

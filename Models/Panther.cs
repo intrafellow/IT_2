@@ -1,6 +1,6 @@
 using System;
 
-namespace Laba._2_Animal.Models
+namespace Animal.Models
 
 {
     public class Panther : Creature, IVoiceCapable, ITreeClimber
