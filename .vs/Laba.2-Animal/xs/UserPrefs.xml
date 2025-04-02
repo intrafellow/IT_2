@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{A8B6FAC6-4ECA-5D4B-1CF4-8FDB02CD4E12}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/ITreeClimber.cs">
+    <Files>
+      <File FileName="Views/MainWindow.axaml" Line="52" Column="52" />
+      <File FileName="Views/MainWindow.axaml.cs" Line="1" Column="1" />
+      <File FileName="App.axaml" Line="1" Column="1" />
+      <File FileName="app.manifest" Line="1" Column="1" />
+      <File FileName="App.axaml.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="README.md" Line="1" Column="1" />
+      <File FileName="ViewLocator.cs" Line="1" Column="1" />
+      <File FileName="ViewModels/MainWindowViewModel.cs" Line="20" Column="1" />
+      <File FileName="Models/Creature.cs" Line="15" Column="10" />
+      <File FileName="Models/Dog.cs" Line="31" Column="25" />
+      <File FileName="Models/ITreeClimber.cs" Line="12" Column="2" />
+      <File FileName="Models/IVoiceCapable.cs" Line="1" Column="1" />
+      <File FileName="Models/Panther.cs" Line="59" Column="66" />
+      <File FileName="Models/Turtle.cs" Line="24" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Laba.2-Animal" expanded="True">
+            <Node name="Laba.2-Animal" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ITreeClimber.cs" selected="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Laba.2-Animal PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,58 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Laba._2_Animal.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Laba._2_Animal.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Animal simuation"
+        Background="White">
+
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <Grid RowDefinitions="Auto,*,Auto">
+        <TextBlock Grid.Row="0" Text="Animal simulation" FontSize="24" Margin="10" HorizontalAlignment="Center" Foreground="#4DA6FF"/>
+        
+        <Grid Grid.Row="1" ColumnDefinitions="*,*,*" Margin="10">
+            <Border Grid.Column="0" BorderThickness="1" Margin="5" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Panther" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <Button Content="Move" Command="{Binding PantherMoveCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Stay" Command="{Binding PantherStandCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Give voice" Command="{Binding PantherVoiceCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Go on tree" Command="{Binding PantherClimbTreeCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Go from tree" Command="{Binding PantherGetDownCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Column="1" BorderThickness="1" Margin="5" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Dog" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <Button Content="Move" Command="{Binding DogMoveCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Stay" Command="{Binding DogStandCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Give voice" Command="{Binding DogVoiceCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                </StackPanel>
+            </Border>
+            
+            <Border Grid.Column="2" BorderThickness="1" Margin="5" Padding="10">
+                <StackPanel>
+                    <TextBlock Text="Turtle" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <Button Content="Move" Command="{Binding TurtleMoveCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                    <Button Content="Stay" Command="{Binding TurtleStandCommand}" HorizontalAlignment="Stretch" Margin="0,5"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+        
+        <Grid Grid.Row="2" RowDefinitions="Auto,*">
+            <TextBlock Grid.Row="0" Text="Event log:" FontWeight="Bold" Margin="10,5"/>
+            <Border Grid.Row="1" BorderBrush="#4DA6FF" BorderThickness="1" Margin="10">
+                <ListBox ItemsSource="{Binding LogMessages}" MaxHeight="200" Background="White"/>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
