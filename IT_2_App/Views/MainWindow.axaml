@@ -1,0 +1,71 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:IT_2_App.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="IT_2_App.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="IT_2_App">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto,*" Margin="20">
+        <TextBlock Text="Animal Control Panel" FontSize="24" HorizontalAlignment="Center" Grid.Row="0"/>
+        
+        <Grid Grid.Row="1" ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto,Auto,Auto" Margin="0,20,0,0">
+            <!-- Panther Controls -->
+            <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" BorderBrush="#4DA6FF" BorderThickness="1" Margin="5" Padding="10">
+                <StackPanel Spacing="10">
+                    <TextBlock Text="Panther" FontSize="18" HorizontalAlignment="Center"/>
+                    <Button Content="Move" Command="{Binding PantherMoveCommand}"/>
+                    <Button Content="Stand" Command="{Binding PantherStandCommand}"/>
+                    <Button Content="Voice" Command="{Binding PantherVoiceCommand}"/>
+                    <Button Content="Climb Tree" Command="{Binding PantherClimbTreeCommand}"/>
+                    <Button Content="Get Down" Command="{Binding PantherGetDownCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Dog Controls -->
+            <Border Grid.Column="1" Grid.Row="0" Grid.RowSpan="4" BorderBrush="#4DA6FF" BorderThickness="1" Margin="5" Padding="10">
+                <StackPanel Spacing="10">
+                    <TextBlock Text="Dog" FontSize="18" HorizontalAlignment="Center"/>
+                    <Button Content="Move" Command="{Binding DogMoveCommand}"/>
+                    <Button Content="Stand" Command="{Binding DogStandCommand}"/>
+                    <Button Content="Voice" Command="{Binding DogVoiceCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Turtle Controls -->
+            <Border Grid.Column="2" Grid.Row="0" Grid.RowSpan="4" BorderBrush="#4DA6FF" BorderThickness="1" Margin="5" Padding="10">
+                <StackPanel Spacing="10">
+                    <TextBlock Text="Turtle" FontSize="18" HorizontalAlignment="Center"/>
+                    <Button Content="Move" Command="{Binding TurtleMoveCommand}"/>
+                    <Button Content="Stand" Command="{Binding TurtleStandCommand}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Log Messages -->
+        <Border Grid.Row="2" BorderBrush="#4DA6FF" BorderThickness="1" Margin="5" Padding="10">
+            <Grid RowDefinitions="Auto,*">
+                <TextBlock Text="Log Messages" FontSize="18" Grid.Row="0"/>
+                <ScrollViewer Grid.Row="1">
+                    <ItemsControl Items="{Binding LogMessages}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" Margin="0,2"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+    </Grid>
+
+</Window>
